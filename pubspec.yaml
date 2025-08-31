@@ -1,0 +1,33 @@
+name: controle_financeiro
+description: "Um aplicativo simples de controle financeiro."
+
+# Prevenir publicação acidental no pub.dev.
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  # Garanta que a versão do SDK seja compatível com a sua instalação do Flutter.
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Adicionado para formatação de data e moeda em português (pt_BR).
+  flutter_localizations:
+    sdk: flutter
+
+  # Dependências principais do aplicativo.
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  intl: ^0.20.2 # Para formatação (datas, moeda).
+  flutter_lints: ^3.0.1 # Ferramentas de análise de código.
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
